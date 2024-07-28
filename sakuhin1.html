@@ -8,13 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="photo">
-            <img src="x22015_portfolio.pdf">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="path/to/your/photo1.jpg"></div>
+                <div class="slide"><img src="path/to/your/photo2.jpg"></div>
+                <div class="slide"><img src="path/to/your/photo3.jpg"></div>
+                <!-- 追加のスライドがあればここに追加 -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
         <div class="text">
             <h1>作品タイトル</h1>
             <p>ここに作品の紹介文を書きます。作品の詳細や背景、コンセプトなどを説明してください。</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
