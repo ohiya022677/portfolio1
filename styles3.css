@@ -1,3 +1,9 @@
+*, *::before, *::after {
+    margin: 0; /* 外部余白のリセット */
+    padding: 0; /* 内部余白のリセット */
+    box-sizing: border-box; /* widthやheightなどのサイズ指定をボーダーを含んだサイズで指定できるように変更 */
+  }
+
 body {
     background-image: url("hana.jpg");  /* 背景画像設定 */
     background-size: cover; /* 背景画像のサイズを全体にフィットするように設定 */
