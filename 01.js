@@ -14,7 +14,7 @@ function showSlide(index) {
     }
 
     // スライドを移動
-    slides.style1.transform = `translateX(${-slideIndex * 100}%)`;
+    slides.style1.css = `translateX(${-slideIndex * 100}%)`;
 }
 
 function moveSlide(step) {
