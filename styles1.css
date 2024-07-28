@@ -1,56 +1,25 @@
-.container {
+body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
-.slider {
-    position: relative;
-    max-width: 600px; /* スライダーの最大幅 */
-    overflow: hidden;
-    margin-bottom: 20px; /* スライダーと説明文の間にスペースを追加 */
-}
-.slides {
+
+.gallery {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* スライドの移動にアニメーションを追加 */
+    gap: 20px; /* 写真間のスペースを調整 */
 }
-.slide {
-    min-width: 100%; /* スライドの幅をスライダーの幅に合わせる */
+
+.photo {
+    flex: 1; /* 各写真の幅を均等に */
+    max-width: 300px; /* 写真の最大幅 */
 }
+
 img {
     width: 100%;
     height: auto;
     display: block; /* 画像の下に余計な空白をなくす */
-}
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 2em;
-    text-align: center;
-    line-height: 40px;
-    transform: translateY(-50%);
-}
-.prev {
-    left: 10px;
-}
-.next {
-    right: 10px;
-}
-.text {
-    max-width: 800px; /* 説明文の最大幅 */
-    text-align: center; /* 説明文を中央揃え */
-}
-h1 {
-    font-size: 1.5em; /* タイトルのサイズを調整 */
-    margin-bottom: 10px; /* タイトル下のマージン */
-}
-p {
-    font-size: 1em; /* 説明文のサイズを調整 */
-    line-height: 1.6; /* 説明文の行間を調整 */
+    border-radius: 8px; /* 画像の角を丸くする（任意） */
 }
