@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品紹介</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px; /* アイテム間のスペース */
+        }
+        .photo {
+            margin-right: 20px;
+            flex: 1; /* 写真をコンテナ内で均等に配置 */
+        }
+        .text {
+            max-width: 600px; /* 必要に応じて調整 */
+            flex: 2; /* 説明文をコンテナ内で広げる */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1つ目の写真と説明文 -->
+        <div class="item">
+            <div class="photo">
+                <img src="path/to/your/photo1.jpg" alt="作品1の写真">
+            </div>
+            <div class="text">
+                <h1>作品1タイトル</h1>
+                <p>ここに作品1の紹介文を書きます。作品1の詳細や背景、コンセプトなどを説明してください。</p>
+            </div>
+        </div>
 
+        <!-- 2つ目の写真と説明文 -->
+        <div class="item">
+            <div class="photo">
+                <img src="path/to/your/photo2.jpg" alt="作品2の写真">
+            </div>
+            <div class="text">
+                <h1>作品2タイトル</h1>
+                <p>ここに作品2の紹介文を書きます。作品2の詳細や背景、コンセプトなどを説明してください。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
