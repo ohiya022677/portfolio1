@@ -212,4 +212,22 @@
   .title1{
     color: #2f86ff; 
   }
-  
+  .my-works {
+    text-align: center;
+  } 
+
+  .works-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .works-list li {
+    margin: 0 10px;
+  }
+
+  .works-list li:nth-child(2) {
+    margin: 0 auto;
+  }
