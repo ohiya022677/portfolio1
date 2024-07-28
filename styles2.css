@@ -30,3 +30,10 @@ p {
     font-size: 0.9em; /* 説明文のサイズを調整 */
     line-height: 1.5; /* 説明文の行間を調整 */
 }
+
+.background-filter {
+    width: 100%;  /* bodyタグと同じ大きさにする */
+    height: 100%;  /* bodyタグと同じ大きさにする */
+    position: fixed; /* bodyタグの開始位置を基準として、位置を固定します */
+    top: 0; /* bodyタグの開始位置を基準として、位置を固定します */
+    left: 0; /* bodyタグの開始位置を基準として、位置を固定します */
