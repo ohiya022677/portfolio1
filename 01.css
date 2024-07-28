@@ -222,12 +222,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .works-list li {
     margin: 0 10px;
   }
 
-  .works-list li:nth-child(2) {
+  .works-list a {
+    margin: 0 10px;
+  }
+
+  .works-list a:nth-child(2) {
     margin: 0 auto;
   }
